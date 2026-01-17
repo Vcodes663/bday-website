@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For You 🩵</title>
+
+  <!-- Fonts / CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- 1️⃣ ANTICIPATION -->
+  <!-- First screen. Minimal. Quiet. Builds tension. -->
+  <section id="anticipation" class="screen active">
+    <div class="center">
+      <p class="soft-text">Just a moment…</p>
+      <h1 id="countdown">10</h1>
+      <p class="hint-text">Something special is waiting...</p>
+    </div>
+  </section>
+
+
+  <!-- 2️⃣ CURIOSITY -->
+  <!-- Makes her interact. Nothing fully revealed yet. -->
+  <section id="curiosity" class="screen hidden">
+    <div class="center">
+      <p class="soft-text">Hey you ninne👀</p>
+      <h2 class="question-text">
+        Wanna see what I made for you?
+      </h2>
+
+      <button id="curiosity-btn" class="primary-btn">
+        Tap to find out
+      </button>
+    </div>
+  </section>
+
+
+  <!-- 3️⃣ SURPRISE -->
+  <!-- The emotional reveal + confetti trigger -->
+  <section id="surprise" class="screen hidden">
+    <div class="center">
+      <div class="surprise-card">
+        <p class="small-text">It’s your day</p>
+        <h1 class="big-text">Happy Birthday Chelli🩵</h1>
+        <p class="message-text">
+          I wanted to give you something different.<br />
+          Something made just for you.
+        </p>
+      </div>
+    </div>
+
+    <!-- Confetti canvas -->
+    <canvas id="confetti-canvas"></canvas>
+  </section>
+
+
+  <!-- 4️⃣ JOY -->
+  <!-- Playful, happy, alive -->
+  <section id="joy" class="screen">
+    <div class="center">
+      <h2>You make my world brighter everyday✨</h2>
+
+      <p class="joy-text">
+        I hope today makes you smile a little more,<br />
+        laugh a little louder,<br />
+        and feel how loved you are.
+      </p>
+
+      <button id="joy-btn" class="secondary-btn">
+        One last thing…
+      </button>
+    </div>
+  </section>
+
+
+  <!-- 5️⃣ WARM ENDING -->
+  <!-- Calm, sincere, emotional landing -->
+  <section id="ending" class="screen hidden">
+  <div class="center">
+    <p class="closing-text">
+      I hope today reminds you<br />
+      how special you are.
+    </p>
+
+    <p class="closing-text">
+      Not just today —<br />
+      but every single day.<br>
+      Love you 3000 nannaluuuu🩷🩵💗
+    </p>
+
+    <p class="signature">
+      Happy Birthday once again 💖💜
+    </p>
+    
+    
+    <div id="spotify-section" class="hidden">
+    <button id="spotify-btn">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111624.png" alt="Spotify" />
+      Vibe to OUR Playlist
+    </button>
+    </div>
+    
+
+    <p class="closing-text">
+        🩷<br>
+        Not sure where life takes us, <br>
+        but I just hope I be with you throughout your thick and thin... <br>
+        Umaaah 😘
+    </p>
+  </div>
+</section>
+
+
+
+  <!-- SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
